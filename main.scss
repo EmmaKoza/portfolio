@@ -1,0 +1,216 @@
+header{
+    display:flex;
+    justify-content: space-between;
+    padding:1rem 0;
+    align-items: center;
+    border-bottom:1px solid rgba(255,255,255,0.7);
+    p,span{
+        font-size:1.4rem;
+    }  
+    .time{
+        position:relative;
+        span{
+            padding-left:40px
+        }
+        svg{
+            top:-6px;
+            position:absolute;
+        }
+    }
+    .weather{
+        position:relative;
+        svg{
+            position:absolute;
+            top:9px;
+        }
+        p{
+            padding-left:30px;
+        }
+    }
+}
+//base body styles
+body{
+    background:#2f80ed;
+    font-family: 'Poppins';
+    color:#fff;
+    min-height:100vh;
+    p{
+        font-size: 1rem;
+    }
+    h1{
+        font-size:3.2rem;
+        margin-top:0;
+    }
+    a{
+        color:#ffff58;
+    }
+ 
+    .container{
+        width:80%;
+        max-width:1080px;
+        margin:0 auto;
+        main{
+            display: flex;
+            justify-content: space-between;
+            padding-top:3rem;
+            .right{
+                padding-left:2rem;
+            }
+        }
+    }
+    .social-links{
+        position:fixed;
+        left:2rem;
+        top:50%;
+        padding-left:0;
+        transform:translateY(-50%);
+        li{
+            padding:5px;
+        }
+        i{
+            font-size:1.8rem;
+            color:#fff;
+        
+        }
+    }
+}
+
+ul{
+    list-style: none;
+    strong{
+        display:block;
+    }
+}
+.goals{
+    list-style: circle;
+    li{
+        margin:5px 0;
+    }
+}
+
+
+//specific class styles
+.early-morning{
+    background: linear-gradient(to bottom, #fdc830, #f37335);
+    a{
+        color:#b320ff;
+    }
+}
+.mid-morning{
+    background:linear-gradient(to bottom,#89F7FE, #66A6FF);
+    a{
+        color:#0c72ff;
+    }
+}
+.noon{
+    background:#2f80ed;
+    a{
+        color:#ffff00;
+    }
+}
+.early-afternoon{
+    background:linear-gradient(to bottom,#56ccf2, #2f80ed);
+}
+.late-afternoon{
+    background:linear-gradient(to bottom, #2980b9, #1fc4ff, #ccc);
+}
+.sunset{
+    background:linear-gradient(to top, #cf8bf3, #fdb99b);
+    a{
+        color:#0681b0;
+    }
+}
+
+.early-evening{
+    background:linear-gradient(to bottom, #1488cc, #2b32b2);
+    a{
+        color:#fdb99b;
+    }
+}
+
+.night{
+    background:linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    a{
+        color:#cf8bf3;
+    }
+}
+
+.midnight{
+    background:linear-gradient(to top, #232526, #414345);
+    a{
+        color:#6dd5fa;
+    }
+}
+
+@media(max-width:1060px){
+    body{
+        h1{
+            font-size:3rem;
+        }
+        .container{
+            main{
+                .right{
+                    padding-left:0;
+                }
+            }
+        }
+    }
+   
+}
+
+@media(max-width:903px){
+    body{
+        h1{
+            font-size:3rem;
+        }
+        .container{
+            main{
+                display:unset;
+                .right,
+                .left{
+                    width:100%;
+                    ul:not.goals{
+                        padding-left:0;
+                    }
+                }
+                .left{
+                    border-bottom:1px solid #fff;
+                }
+            }
+        }
+    }  
+}
+
+@media(max-width:551px){
+    body{
+        h1{
+            font-size:3rem;
+        }
+        .container{
+            main{
+                .right{
+                    padding-bottom:4rem;
+                }
+                .social-links{
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    text-align: center;
+                    top: auto;
+                    background: #cf8bf3;
+                    padding: 10px;
+                    margin: 5px 0 0 0;
+                    padding-left: 0;
+                    transform: unset;
+                    .goals{
+                        padding-left:2rem;
+                    }
+                    li{
+                        display:inline;
+                        padding:10px;
+                    }
+                }
+            }
+        }
+    }    
+}
