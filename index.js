@@ -13,24 +13,24 @@ const getElementAndChangeText = (selector, string) =>{
 const d = new Date();
 
 let currentHour = d.getHours();
-let currentMinute = d.getMinutes();
+let minuteRightNow = d.getMinutes();
 
 
-if(currentMinute<10){
+if(minuteRightNow<10){
     minuteRightNow = '0'+ minuteRightNow
 }
 
-const TimeRightNow = `${currentHour}:${currentMinute}`;
+const TimeRightNow = `${currentHour}:${minuteRightNow}`;
 
 window.setInterval(()=>{ 
     const l = new Date();
     if (l.getUTCSeconds() === 0 ){
         currentHour = l.getHours();
-        currentMinute  = l.getMinutes();
-        if(currentMinute < 10){
-            currentMinute  = '0'+ currentMinute 
+        minuteRightNow  = l.getMinutes();
+        if(minuteRightNow < 10){
+            minuteRightNow  = '0'+ minuteRightNow 
         }
-        const updatedTime = `${currentHour}:${currentMinute}`;
+        const updatedTime = `${currentHour}:${minuteRightNow}`;
         getElementAndChangeText('current-time',updatedTime);
     }
  }, 1000);

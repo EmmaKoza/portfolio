@@ -1,7 +1,6 @@
 {
   "name": "portfolio-splash",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,5 +11,15 @@
   "dependencies": {
     "moment": "^2.22.2",
     "node-sass": "^4.9.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmmaKoza/portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EmmaKoza/portfolio/issues"
+  },
+  "homepage": "https://github.com/EmmaKoza/portfolio#readme",
+  "description": ""
 }
